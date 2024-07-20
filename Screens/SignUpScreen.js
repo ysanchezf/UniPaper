@@ -8,7 +8,7 @@ export default function SignUpScreen({ navigation }) {
       <TextInput style={styles.input} placeholder="Enter your phone number or email address" />
       <TextInput style={styles.input} placeholder="Username" />
       <TextInput style={styles.input} placeholder="Enter your Password" secureTextEntry={true} />
-      <Button title="Start" onPress={() => navigation.navigate('Home')} />
+      <Button title="Start" onPress={() => navigation.navigate('Main')} />
       <TouchableOpacity onPress={() => navigation.navigate('SignIn')}>
         <Text style={styles.link}>Sign in</Text>
       </TouchableOpacity>

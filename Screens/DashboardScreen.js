@@ -9,6 +9,11 @@ export default function DashboardScreen({ navigation }) {
   const products = [
     { id: '1', name: 'CUADERNO RALLADO', price: 'RD$ 100.00', image: require('../assets/notebook.jpg') },
     { id: '2', name: 'BOLIGRAFO AZUL', price: 'RD$ 50.00', image: require('../assets/pen.jpg') },
+    { id: '1', name: 'CUADERNO RALLADO', price: 'RD$ 100.00', image: require('../assets/notebook.jpg') },
+    { id: '2', name: 'BOLIGRAFO AZUL', price: 'RD$ 50.00', image: require('../assets/pen.jpg') },
+    { id: '1', name: 'CUADERNO RALLADO', price: 'RD$ 100.00', image: require('../assets/notebook.jpg') },
+    { id: '2', name: 'BOLIGRAFO AZUL', price: 'RD$ 50.00', image: require('../assets/pen.jpg') },
+  
     // Add more products as needed
   ];
 
@@ -28,7 +33,9 @@ export default function DashboardScreen({ navigation }) {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>News & Community</Text>
-        <Image source={require('../assets/placeholder.jpg')} style={styles.placeholder} />
+        <TouchableOpacity onPress={() => navigation.navigate('SignIn')}>
+          <Image source={require('../assets/placeholder.jpg')} style={styles.placeholder} />
+        </TouchableOpacity>
       </View>
      
       <Text style={styles.subtitle}>New Arrivals</Text>
@@ -82,17 +89,6 @@ const styles = StyleSheet.create({
   placeholder: {
     width: 40,
     height: 40,
-  },
-  newsContainer: {
-    height: 200,
-    backgroundColor: '#f0f0f0',
-    marginBottom: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  newsImage: {
-    width: 100,
-    height: 100,
   },
   subtitle: {
     fontSize: 20,
