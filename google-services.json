@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739825403705",
+    "project_id": "unipaper-4eb94",
+    "storage_bucket": "unipaper-4eb94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739825403705:android:ee7b6054c9cd48dce78ae8",
+        "android_client_info": {
+          "package_name": "com.unphu.unipaper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFmiVnoZUwjHoDIxDEnVb26kIUCLYnPN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
